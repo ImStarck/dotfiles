@@ -44,6 +44,11 @@ window {
     border: @w-border;
     border-color: @w-border-color;
     padding: @w-padding;
+
+    location: south;
+    anchor: south;
+
+    y-offset: -300px;
 }
 
 prompt {
