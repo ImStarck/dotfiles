@@ -1,25 +1,29 @@
 * {
-    font: "Figtree 13";
+    font: "JetBrainsMono Nerd Font 13";
     g-spacing: 10px;
     g-margin: 0;
+    
     b-color: #000000FF;
+    wbg-color: rgba(30, 30, 30, 0.75);
+    
     fg-color: #d8a657;
-    fgp-color: #888888FF;
+    fgp-color: #928374FF; 
+    
+    hl-color: rgba(60, 60, 60, 0.9);
+    hlt-color: #d8a657;
+    
+    alt-color: transparent;
     b-radius: 8px;
     g-padding: 8px;
-    hl-color: #e78a4e;
-    hlt-color: #000000FF;
-    alt-color: #111111FF;
-    wbg-color: #000000CC;
     w-border: 2px solid;
-    w-border-color: #d8a657;
+    w-border-color: #d8a657; 
     w-padding: 12px;
 }
 
 configuration {
     modi: "drun";
     show-icons: true;
-    display-drun: "";
+    display-drun: "";
 }
 
 listview {
@@ -76,26 +80,26 @@ element {
 }
 
 element normal.normal {
-	background-color: transparent;
-	text-color: @fg-color;
+    background-color: transparent;
+    text-color: @fg-color;
 }
 
 element alternate.normal {
-	background-color: @alt-color;
-	text-color: @fg-color;
+    background-color: @alt-color;
+    text-color: @fg-color;
 }
 
 element selected.active {
-	background-color: @hl-color;
-	text-color: @hlt-color;
+    background-color: @hl-color;
+    text-color: @hlt-color;
 }
 
 element selected.normal {
-	background-color: @hl-color;
-	text-color: @hlt-color;
+    background-color: @hl-color;
+    text-color: @hlt-color;
 }
 
 message {
-    background-color: red;
+    background-color: rgba(60, 60, 60, 0.5);
     border: 0px solid;
 }
