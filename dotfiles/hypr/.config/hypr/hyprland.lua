@@ -279,19 +279,19 @@ hl.window_rule({
 -- hl.window_rule({
 --     name = "vscode-opacity",
 --     match = { class = "^code$" },
---     opacity = { 0.91, 0.91 },
+--     opacity = "0.91, 0.91",
 -- })
 
 -- hl.window_rule({
 --     name = "vesktop",
 --     match = { class = "^(vesktop)$" },
---     opacity = { 0.89, 0.89 },
+--     opacity = "0.89, 0.89",
 -- })
 
 hl.window_rule({
     name = "thunar-glass",
     match = { class = "^thunar$" },
-    opacity = { 0.85, 0.85 },
+    opacity = "0.85 0.85",
 })
 
 hl.window_rule({
