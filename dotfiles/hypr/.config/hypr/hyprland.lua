@@ -149,7 +149,7 @@ hl.config({
     },
     cursor = {
         -- Crucial for NVIDIA cards to prevent micro-stuttering during cursor updates
-        no_hardware_cursors = false,
+        no_hardware_cursors = true,
     },
     render = {
         direct_scanout = 1,
@@ -340,4 +340,13 @@ hl.window_rule({
     immediate = true,
     no_blur = true,
     no_shadow = true,
+})
+
+hl.window_rule({
+    name = "gslapper-perf-override",
+    match = { class = "^(gslapper)$" },
+    no_blur = true,
+    no_shadow = true,
+    opaque = true,
+    no_anim = true,
 })
